@@ -56,15 +56,55 @@
 		763EA4872542ED0F0077516D /* MyResume */ = {
 			isa = PBXGroup;
 			children = (
-				763EA4882542ED0F0077516D /* AppDelegate.swift */,
-				763EA48A2542ED0F0077516D /* SceneDelegate.swift */,
-				763EA48C2542ED0F0077516D /* ViewController.swift */,
-				763EA48E2542ED0F0077516D /* Main.storyboard */,
-				763EA4912542ED110077516D /* Assets.xcassets */,
-				763EA4932542ED110077516D /* LaunchScreen.storyboard */,
-				763EA4962542ED110077516D /* Info.plist */,
+				763EA4A32542F03C0077516D /* ViewControllers */,
+				763EA4A62542F0940077516D /* Models */,
+				763EA49D2542EE4E0077516D /* Storyboards */,
+				763EA49F2542EE9C0077516D /* Supporting Files */,
+				763EA4A52542F04F0077516D /* Resourses */,
 			);
 			path = MyResume;
+			sourceTree = "<group>";
+		};
+		763EA49D2542EE4E0077516D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				763EA48E2542ED0F0077516D /* Main.storyboard */,
+				763EA4932542ED110077516D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		763EA49F2542EE9C0077516D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				763EA4882542ED0F0077516D /* AppDelegate.swift */,
+				763EA48A2542ED0F0077516D /* SceneDelegate.swift */,
+				763EA4962542ED110077516D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		763EA4A32542F03C0077516D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				763EA48C2542ED0F0077516D /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		763EA4A52542F04F0077516D /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				763EA4912542ED110077516D /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		763EA4A62542F0940077516D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQ5VJ2W2YB;
-				INFOPLIST_FILE = MyResume/Info.plist;
+				INFOPLIST_FILE = "MyResume/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Bruyko.MyResume;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQ5VJ2W2YB;
-				INFOPLIST_FILE = MyResume/Info.plist;
+				INFOPLIST_FILE = "MyResume/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Bruyko.MyResume;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
