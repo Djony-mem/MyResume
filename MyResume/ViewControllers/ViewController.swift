@@ -7,15 +7,11 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     
     
     @IBAction func forgotNameButton() {
@@ -26,7 +22,19 @@ class ViewController: UIViewController {
         showAlert(with: "Your password", and: "A1234Y")
     }
     
-    @IBAction func pressedButton() {
+    @IBAction func loginTapped() {
+        guard let inputTextName = userNameTextField.text, !inputTextName.isEmpty else {
+           return showAlert(with: "Are you mistake", and: "Enter your name")
+        }
+        guard let inputTextPassword = passwordTextField.text,
+              !inputTextPassword.isEmpty else {
+            return showAlert(with: "Are you mistake", and: "Enter your password")}
+        
+        if inputTextPassword != getPerson().password {
+            showAlert(with: "Ops", and: "This is not your password")
+            passwordTextField.text = ""
+        }
+        
         
     }
     
@@ -53,6 +61,19 @@ extension ViewController {
         let okAlert = UIAlertAction(title: "Ok", style: .default)
         alert.addAction(okAlert)
         present(alert, animated: true)
+    }
+    
+}
+
+// MARK: - Extension UITextFieldDelegate
+
+extension ViewController: UITextFieldDelegate {
+    internal func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == userNameTextField {
+            textField.resignFirstResponder()
+            passwordTextField.becomeFirstResponder()
+        }
+        return true
     }
 }
 

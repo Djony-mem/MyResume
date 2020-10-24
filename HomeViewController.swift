@@ -14,9 +14,12 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        greetingLable.text = "Welcom to my world, \(String(describing: login))"
+        greetingLable.text = "Welcom to my world, \(login!)"
     }
     
+    @IBAction func goBackLogInButton() {
+     dismiss(animated: true)
+    }
 
     /*
     // MARK: - Navigation
