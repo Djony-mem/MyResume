@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     
+// MARK: - Action
+    
     @IBAction func forgotNameButton() {
         showAlert(with: "Your name", and: "Aleksey")
     }
@@ -38,6 +40,8 @@ class ViewController: UIViewController {
         passwordTextField.text = ""
         
     }
+    
+// MARK: - Function
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)

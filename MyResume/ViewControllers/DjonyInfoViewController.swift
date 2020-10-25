@@ -14,7 +14,7 @@ class DjonyInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fotoInClab.layer.cornerRadius = 10
-        fotoInCar.layer.cornerRadius = 10
+        fotoInClab.layer.cornerRadius = 20
+        fotoInCar.layer.cornerRadius = 20
     }
 }
