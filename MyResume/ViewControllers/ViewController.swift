@@ -24,17 +24,18 @@ class ViewController: UIViewController {
     
     @IBAction func loginTapped() {
         guard let inputTextName = userNameTextField.text, !inputTextName.isEmpty else {
-           return showAlert(with: "Are you mistake", and: "Enter your name")
+            return showAlert(with: "Are you mistake", and: "Enter your name")
         }
         guard let inputTextPassword = passwordTextField.text,
               !inputTextPassword.isEmpty else {
             return showAlert(with: "Are you mistake", and: "Enter your password")}
         
-        if inputTextPassword != getPerson().password {
-            showAlert(with: "Ops", and: "This is not your password")
+        guard inputTextPassword == getPersonID().password else {
             passwordTextField.text = ""
+            return showAlert(with: "Ops", and: "This is not your password")
         }
-        
+        userNameTextField.text = ""
+        passwordTextField.text = ""
         
     }
     
@@ -46,7 +47,6 @@ class ViewController: UIViewController {
         let tabBarController = segue.destination as! UITabBarController
         let homeVC = tabBarController.viewControllers?.first as! HomeViewController
         homeVC.login = userNameTextField.text
-
     }
     
 }
@@ -56,8 +56,8 @@ class ViewController: UIViewController {
 extension ViewController {
     private func showAlert(with title: String, and massage: String) {
         let alert = UIAlertController(title: title,
-                        message: massage,
-                        preferredStyle: .alert)
+                                      message: massage,
+                                      preferredStyle: .alert)
         let okAlert = UIAlertAction(title: "Ok", style: .default)
         alert.addAction(okAlert)
         present(alert, animated: true)

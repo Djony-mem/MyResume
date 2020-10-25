@@ -15,6 +15,10 @@
 		763EA4952542ED110077516D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 763EA4932542ED110077516D /* LaunchScreen.storyboard */; };
 		763EA4B625436F8E0077516D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EA4B525436F8E0077516D /* HomeViewController.swift */; };
 		763EA4B92543909D0077516D /* IdentificationPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EA4B82543909D0077516D /* IdentificationPerson.swift */; };
+		763EA4BE2545C1710077516D /* DjonyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EA4BD2545C1710077516D /* DjonyInfoViewController.swift */; };
+		763EA4C12545C1CB0077516D /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EA4C02545C1CB0077516D /* MoreInfoViewController.swift */; };
+		763EA4C42545C3680077516D /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EA4C32545C3680077516D /* DescriptionViewController.swift */; };
+		763EA4C92545DC6D0077516D /* MyPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EA4C82545DC6D0077516D /* MyPerson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		763EA4962542ED110077516D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		763EA4B525436F8E0077516D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		763EA4B82543909D0077516D /* IdentificationPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentificationPerson.swift; sourceTree = "<group>"; };
+		763EA4BD2545C1710077516D /* DjonyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DjonyInfoViewController.swift; sourceTree = "<group>"; };
+		763EA4C02545C1CB0077516D /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
+		763EA4C32545C3680077516D /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		763EA4C82545DC6D0077516D /* MyPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPerson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,9 @@
 		763EA4A32542F03C0077516D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				763EA4C32545C3680077516D /* DescriptionViewController.swift */,
+				763EA4C02545C1CB0077516D /* MoreInfoViewController.swift */,
+				763EA4BD2545C1710077516D /* DjonyInfoViewController.swift */,
 				763EA4B525436F8E0077516D /* HomeViewController.swift */,
 				763EA48C2542ED0F0077516D /* ViewController.swift */,
 			);
@@ -109,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				763EA4B82543909D0077516D /* IdentificationPerson.swift */,
+				763EA4C82545DC6D0077516D /* MyPerson.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,8 +198,12 @@
 				763EA4B92543909D0077516D /* IdentificationPerson.swift in Sources */,
 				763EA48D2542ED0F0077516D /* ViewController.swift in Sources */,
 				763EA4892542ED0F0077516D /* AppDelegate.swift in Sources */,
+				763EA4C12545C1CB0077516D /* MoreInfoViewController.swift in Sources */,
 				763EA48B2542ED0F0077516D /* SceneDelegate.swift in Sources */,
+				763EA4C42545C3680077516D /* DescriptionViewController.swift in Sources */,
 				763EA4B625436F8E0077516D /* HomeViewController.swift in Sources */,
+				763EA4BE2545C1710077516D /* DjonyInfoViewController.swift in Sources */,
+				763EA4C92545DC6D0077516D /* MyPerson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
