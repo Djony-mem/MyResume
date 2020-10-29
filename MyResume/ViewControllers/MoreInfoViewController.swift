@@ -9,15 +9,14 @@ import UIKit
 
 class MoreInfoViewController: UIViewController {
     
-    @IBOutlet weak var myName: UINavigationItem!
     @IBOutlet weak var sheButton: UIButton!
+    
+    var person: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        myName.title = "\(getMyPersonInfo().name) \(getMyPersonInfo().surname)"
-        
         sheButton.layer.cornerRadius = 10
+        title = person.person.fullName
     }
 
 }

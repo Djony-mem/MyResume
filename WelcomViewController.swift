@@ -7,18 +7,16 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class WelcomViewController: UIViewController {
 
     @IBOutlet weak var greetingLable: UILabel!
     
-    var login: String!
+    var login: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        greetingLable.text = "Welcom to my world, \(login.login)!"
         
-        if let login = login {
-            greetingLable.text = "Welcom to my world, \(login)"
-        }
     }
     
     @IBAction func goBackLogInButton() {

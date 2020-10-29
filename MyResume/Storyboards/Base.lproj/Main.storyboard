@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyResume" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="MyResume" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,7 +47,6 @@
                                         <state key="normal" title="Log in"/>
                                         <connections>
                                             <action selector="loginTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="qwx-pX-iRT"/>
-                                            <segue destination="WrI-aW-5nh" kind="presentation" id="dkB-3w-peh"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="W3L-LY-cab">
@@ -59,6 +58,7 @@
                                                 <state key="normal" title="Forgot user name?"/>
                                                 <connections>
                                                     <action selector="forgotNameButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="PXu-bq-ejt"/>
+                                                    <action selector="forgotUserNamePressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="eji-L9-Xwj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aj8-mG-QU9">
@@ -66,6 +66,7 @@
                                                 <state key="normal" title="Forgot password?"/>
                                                 <connections>
                                                     <action selector="forgotPasswordButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="2DK-af-Fh0"/>
+                                                    <action selector="forgotPasswordPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="GXv-Xo-xQW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -85,6 +86,7 @@
                     <connections>
                         <outlet property="passwordTextField" destination="ksB-fR-HUl" id="9RB-W6-37G"/>
                         <outlet property="userNameTextField" destination="YNn-Nc-YEb" id="NVx-N6-tis"/>
+                        <segue destination="WrI-aW-5nh" kind="presentation" identifier="showWelcome" id="RLF-yG-Mce"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -214,7 +216,6 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="hRE-oO-VQC"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="myName" destination="DLI-2l-1YB" id="5RX-Ut-B6Q"/>
                         <outlet property="sheButton" destination="BoN-MM-afb" id="XuB-Ku-d4B"/>
                     </connections>
                 </viewController>
@@ -222,10 +223,10 @@
             </objects>
             <point key="canvasLocation" x="-63.75" y="808.09859154929575"/>
         </scene>
-        <!--Description View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="UeX-MK-Q9p">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="7b0-Fk-5Lg" customClass="DescriptionViewController" customModule="MyResume" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="7b0-Fk-5Lg" customClass="LoginViewController" customModule="MyResume" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dra-3Q-6n9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -258,10 +259,10 @@
             </objects>
             <point key="canvasLocation" x="697.5" y="805.9859154929577"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Welcom View Controller-->
         <scene sceneID="tkw-UE-XzA">
             <objects>
-                <viewController id="JQg-El-D4R" customClass="HomeViewController" customModule="MyResume" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JQg-El-D4R" customClass="WelcomViewController" customModule="MyResume" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kny-Qk-D40">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
