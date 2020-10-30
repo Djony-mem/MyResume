@@ -288,6 +288,7 @@
                                         <state key="normal" title="Log out"/>
                                         <connections>
                                             <action selector="goBackLogInButton" destination="JQg-El-D4R" eventType="touchUpInside" id="SfH-r1-CHZ"/>
+                                            <segue destination="mOu-sQ-sdf" kind="unwind" unwindAction="unwindSegueWithSegue:" id="AQa-FY-c5E"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -307,6 +308,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZ1-u3-KSF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="mOu-sQ-sdf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-129.375" y="55.985915492957744"/>
         </scene>

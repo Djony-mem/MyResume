@@ -20,6 +20,5 @@ class WelcomViewController: UIViewController {
     }
     
     @IBAction func goBackLogInButton() {
-     dismiss(animated: true)
     }
 }
